@@ -99,22 +99,22 @@ MonoBehaviour:
   m_Name: Android
   m_EditorClassIdentifier: 
   features:
+  - {fileID: 2474546921103615478}
+  - {fileID: -6972056036561088713}
+  - {fileID: -6016975705582463879}
+  - {fileID: 1260922009840576155}
+  - {fileID: -634472903503693427}
+  - {fileID: 3751032049219561728}
+  - {fileID: 4739212135604954633}
+  - {fileID: -3806692242891599384}
+  - {fileID: 5752682169506977118}
+  - {fileID: 5271066540706066903}
   - {fileID: 961810322744158897}
   - {fileID: -2515662998321113141}
   - {fileID: 984660024310454364}
   - {fileID: 3374804552628920134}
   - {fileID: -3103167577205481640}
-  - {fileID: 2474546921103615478}
   - {fileID: -2839674694040152386}
-  - {fileID: -6972056036561088713}
-  - {fileID: -6016975705582463879}
-  - {fileID: 1260922009840576155}
-  - {fileID: -634472903503693427}
-  - {fileID: -375779219995380543}
-  - {fileID: 3751032049219561728}
-  - {fileID: 4739212135604954633}
-  - {fileID: -3806692242891599384}
-  - {fileID: 5271066540706066903}
   - {fileID: 3054022091066082122}
   - {fileID: 1813197879024666209}
   - {fileID: 3194689635215205143}
@@ -122,7 +122,11 @@ MonoBehaviour:
   - {fileID: -3169786426895660082}
   - {fileID: -2178695642331902377}
   - {fileID: -2486100481828278034}
+  - {fileID: -375779219995380543}
   m_renderMode: 1
+  m_autoColorSubmissionMode: 1
+  m_colorSubmissionModes:
+    m_List: 00000000
   m_depthSubmissionMode: 0
   m_optimizeBufferDiscards: 1
   m_symmetricProjection: 0
@@ -279,6 +283,9 @@ MonoBehaviour:
   - visibleName: Quest 3
     manifestName: eureka
     enabled: 1
+  - visibleName: Quest 3S
+    manifestName: quest3s
+    enabled: 1
   forceRemoveInternetPermission: 0
   symmetricProjection: 0
   foveatedRenderingApi: 0
@@ -326,6 +333,27 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &-3273134813960317601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
+  m_Name: WebGL
+  m_EditorClassIdentifier: 
+  features:
+  - {fileID: 8426669835452116614}
+  m_renderMode: 1
+  m_autoColorSubmissionMode: 1
+  m_colorSubmissionModes:
+    m_List: 00000000
+  m_depthSubmissionMode: 0
+  m_optimizeBufferDiscards: 0
+  m_symmetricProjection: 0
 --- !u!114 &-3169786426895660082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,10 +548,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0ebc320a151d3408ea1e9fce54d40e, type: 3}
   m_Name: OpenXR Package Settings
   m_EditorClassIdentifier: 
-  Keys: 0100000007000000
+  Keys: 01000000070000000d000000
   Values:
   - {fileID: 4339974643472491348}
   - {fileID: -6243217948086879288}
+  - {fileID: -3273134813960317601}
 --- !u!114 &397424452094604121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -867,11 +896,11 @@ MonoBehaviour:
   - {fileID: 1447472934704256460}
   - {fileID: -8544701686514982173}
   - {fileID: 5850520811413952500}
-  - {fileID: -1073786204831135087}
   - {fileID: -4594033445081000938}
   - {fileID: -4776147484891884711}
   - {fileID: -3760976435219185688}
   - {fileID: 4196361191563850048}
+  - {fileID: 7930894222048395658}
   - {fileID: 7185780412489159401}
   - {fileID: 2941370854550465865}
   - {fileID: -4108962109361253559}
@@ -881,7 +910,11 @@ MonoBehaviour:
   - {fileID: 6981593672688672654}
   - {fileID: -5632902217613632164}
   - {fileID: 1847527878808488670}
+  - {fileID: -1073786204831135087}
   m_renderMode: 1
+  m_autoColorSubmissionMode: 1
+  m_colorSubmissionModes:
+    m_List: 00000000
   m_depthSubmissionMode: 0
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
@@ -922,6 +955,26 @@ MonoBehaviour:
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.metaquestpro
   openxrExtensionStrings: XR_FB_touch_controller_pro
+  company: Unity
+  priority: 0
+  required: 0
+--- !u!114 &5752682169506977118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7365b139f7aec43b23d26b7a48b5a6, type: 3}
+  m_Name: MetaQuestTouchPlusControllerProfile Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: Meta Quest Touch Plus Controller Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.metaquestplus
+  openxrExtensionStrings: XR_META_touch_controller_plus
   company: Unity
   priority: 0
   required: 0
@@ -984,6 +1037,46 @@ MonoBehaviour:
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.metaquestpro
   openxrExtensionStrings: XR_FB_touch_controller_pro
+  company: Unity
+  priority: 0
+  required: 0
+--- !u!114 &7930894222048395658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7365b139f7aec43b23d26b7a48b5a6, type: 3}
+  m_Name: MetaQuestTouchPlusControllerProfile Standalone
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: Meta Quest Touch Plus Controller Profile
+  version: 0.0.1
+  featureIdInternal: com.unity.openxr.feature.input.metaquestplus
+  openxrExtensionStrings: XR_META_touch_controller_plus
+  company: Unity
+  priority: 0
+  required: 0
+--- !u!114 &8426669835452116614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b213d3e3c7f3109449eb46a4c8ee42f0, type: 3}
+  m_Name: XrPerformanceSettingsFeature WebGL
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: XR Performance Settings
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.extension.performance_settings
+  openxrExtensionStrings: XR_EXT_performance_settings
   company: Unity
   priority: 0
   required: 0
