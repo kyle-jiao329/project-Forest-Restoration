@@ -1,12 +1,13 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class ProgressBar : MonoBehaviour
 {
     public Transform player;
     public Image spriteRenderer;
-    public int woniu = 0;
-    public float progressValue; // 进度值，范围 0 到 1
+    [FormerlySerializedAs("woniu")] public int pickCount = 0;
+    public float progressValue;
     private Vector3 initialOffset;
     void Start()
     {
@@ -15,9 +16,9 @@ public class ProgressBar : MonoBehaviour
     void Update()
 
     {
-        progressValue = woniu/ 5f;
+        progressValue = pickCount/ 5f;
         //transform.position = player.position + initialOffset;
-        spriteRenderer.fillAmount = progressValue; // 设置进度条的填充量
+        spriteRenderer.fillAmount = progressValue;
 
     }
 }

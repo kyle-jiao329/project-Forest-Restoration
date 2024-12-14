@@ -4,7 +4,9 @@ public class PlayerController : MonoBehaviour
 {
     public float detectionRange = 2f;
     private bool hasNetBag = false;
+    public bool hasCake = false;
     public GameObject Netbag;
+    public GameObject Cake;
 
     void Update()
     {
@@ -21,10 +23,13 @@ public class PlayerController : MonoBehaviour
             else if (collider.CompareTag("Snail") && hasNetBag)
             {
                 Destroy(collider.gameObject);
-                //hasNetBag = false;
-                                FindObjectOfType<ProgressBar>().woniu += 1;
-                //Netbag.SetActive(false);
-
+                FindObjectOfType<ProgressBar>().pickCount += 1;
+            }
+            else if (collider.CompareTag("Cake"))
+            {
+                Destroy(collider.gameObject);
+                Cake.SetActive(true);
+                hasCake = true;
             }
         }
     }

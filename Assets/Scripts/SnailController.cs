@@ -2,19 +2,20 @@ using UnityEngine;
 
 public class SnailController : MonoBehaviour
 {
-    public float moveSpeed = 2f;
+    public float moveSpeed = 1f;
     public Transform player;
+    private PlayerController playerController;
 
     private void Start()
     {
-        
+        playerController = player.gameObject.GetComponent<PlayerController>();
     }
 
     private void Update()
     {
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
         AdjustHeightToGround();
-        if (distanceToPlayer <= 5f)
+        if (playerController.hasCake && distanceToPlayer <= 5f)
         {
             MoveTowardsPlayer();
         }
