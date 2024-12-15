@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Snail
   - NetBag
+  - Banana
   layers:
   - Default
   - TransparentFX
