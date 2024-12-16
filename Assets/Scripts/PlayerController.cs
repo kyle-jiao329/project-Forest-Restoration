@@ -1,31 +1,51 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
-    public float detectionRange = 2f;
-    private bool hasNetBag = false;
+    public float detectionRange = 1f;
+    public GameObject biochar;
+    public GameObject detector;
     public GameObject Netbag;
+    public GameObject Cake;
+
+    void pickoff()
+    {
+        biochar.SetActive(false);
+        detector.SetActive(false);
+        Netbag.SetActive(false);
+        Cake.SetActive(false);
+    }
+
 
     void Update()
     {
         Collider[] colliders = Physics.OverlapSphere(transform.position, detectionRange);
-
         foreach (Collider collider in colliders)
         {
-            if (collider.CompareTag("NetBag"))
+            if (collider.CompareTag("BiocharSpace"))
             {
-                Destroy(collider.gameObject);
-                hasNetBag = true;
+                pickoff();
+                biochar.SetActive(true);
+            }
+            if (collider.CompareTag("DetectorSpace"))
+            {
+                pickoff();
+                detector.SetActive(true);
+            }
+            if (collider.CompareTag("NetBagSpace"))
+            {
+                pickoff();
                 Netbag.SetActive(true);
             }
-            else if (collider.CompareTag("Snail") && hasNetBag)
+            if (collider.CompareTag("CakeSpace"))
             {
-                Destroy(collider.gameObject);
-                //hasNetBag = false;
-                                FindObjectOfType<ProgressBar>().woniu += 1;
-                //Netbag.SetActive(false);
-
+                pickoff();
+                Cake.SetActive(true);
             }
+            
         }
     }
 }
