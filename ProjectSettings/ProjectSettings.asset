@@ -852,11 +852,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 512f30ec-f3cf-4e77-8b74-8d34746d7d28
+  cloudProjectId: 44bbef8f-e521-47c6-8e9b-80e96ff3ca68
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: NetworkingDemo
-  organizationId: china1223-126-com
+  organizationId: kjiao
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
