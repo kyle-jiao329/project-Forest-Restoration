@@ -4,9 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Snail
+  - detector
+  - LeftHand
+  - BocharBox
   - NetBag
-  - Cake
+  - Snail
+  - NetBag1
+  - cake
+  - CakeSpace
+  - DetectorSpace
+  - NetBagSpace
+  - BiocharSpace
   layers:
   - Default
   - TransparentFX
